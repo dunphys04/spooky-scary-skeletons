@@ -37,7 +37,25 @@ int main()
 			wcout << L"░░░░░░░█░░░░░░░░█░░" << endl;
 			wcout << L"░░░░░░▐▌░░░░░░░░░█░" << endl;
 			sleep_for(milliseconds(125));
-
+			system("cls");
+			sleep_for(milliseconds(50));
+			wcout << L"░░░░▐▄░░░░░░░░░░▒▒▒" << endl;
+			wcout << L"░░░▄██▄░░▄▄▄░░░░░░▒ " << endl;
+			wcout << L"░▄█▀░░░░▌▀█▀▐░░░░░░" << endl;
+			wcout << L"█▀░░░░░░▌█▄█▐░░░░░░" << endl;
+			wcout << L"▀▄▄▄▄▄░░░▀▄▀░░░░░░░" << endl;
+			wcout << L"░░░░░▀▀▀▀██▄▄▄░░░░░" << endl;
+			wcout << L"░░░░░░▀▀░█▄▄▄▀█░░░░" << endl;
+			wcout << L"░░░░░▀▀▀▌▐▄▄▄░▌░░░░" << endl;
+			wcout << L"░░░░░▀▀░█░▄▄░░░▐░▄░" << endl;
+			wcout << L"░░░░░▀░▀█▀░▄░░░▌█▀░" << endl;
+			wcout << L"░░░░░▄▄▌▐▄▄░░░░░░░░" << endl;
+			wcout << L"░░░▄░█▀███▀░░░░░░░░" << endl;
+			wcout << L"░░░▄▐▀▄▀▄▀▌▐░░░░░░░" << endl;
+			wcout << L"░░▌▐░░░░░░▀▐░░░░░░░" << endl;
+			wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
+			wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
+			sleep_for(milliseconds(125));
 
 		}
 
