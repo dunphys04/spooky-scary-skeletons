@@ -4,6 +4,8 @@
 #include <fcntl.h>
 #include <chrono>
 #include <thread>
+#include <Windows.h>
+#include<conio.h>
 using namespace std;
 
 int main()
@@ -15,7 +17,7 @@ int main()
 	cin >> word;
 	if (word == "skeletons" || word == "skeleton")
 	{
-		while (1)
+		while (!kbhit()) //included from conio.h 
 		{
 			_setmode(_fileno(stdout), _O_U16TEXT);
 			system("cls");
@@ -56,7 +58,6 @@ int main()
 			wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
 			wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
 			sleep_for(milliseconds(125));
-
 		}
 
 	}
