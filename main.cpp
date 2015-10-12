@@ -71,6 +71,7 @@ int main()
 					wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
 					wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
 					sleep_for(milliseconds(125));
+
 				}
 			}
 			else
@@ -78,63 +79,67 @@ int main()
 				wcout << "Huh." << endl;
 			}
 		}
+		}
 		if (option == 2)
 		{
+			int i = 0;
 			wcout << L"Get ready to have me count some skeletors." << endl;
 			wcout << L"Press enter to start the function." << endl;
 			wcout << L"End the program using space. " << endl;
-			
-			while (1)
+			if (_kbhit())
 			{
 				if (GetAsyncKeyState(VK_SPACE))
 				{
 					break;
 				}
-
-				using namespace std::this_thread;
-				using namespace std::chrono;
-				int count = 0;
-				system("cls");
-				sleep_for(milliseconds(50));
-				wcout << L"▒▒▒░░░░░░░░░░▄▐░░░░" << endl;
-				wcout << L"▒░░░░░░▄▄▄░░▄██▄░░░ " << endl;
-				wcout << L"░░░░░░▐▀█▀▌░░░░▀█▄░" << endl;
-				wcout << L"░░░░░░▐█▄█▌░░░░░░▀█▄" << endl;
-				wcout << L"░░░░░░░▀▄▀░░░▄▄▄▄▄▀▀" << endl;
-				wcout << L"░░░░░▄▄▄██▀▀▀▀░░░░░" << endl;
-				wcout << L"░░░░█▀▄▄▄█░▀▀░░░░░░" << endl;
-				wcout << L"░░░░▌░▄▄▄▐▌▀▀▀░░░░░" << endl;
-				wcout << L"░▄░▐░░░▄▄░█░▀▀░░░░░" << endl;
-				wcout << L"░▀█▌░░░▄░▀█▀░▀░░░░░" << endl;
-				wcout << L"░░░░░░░░▄▄▐▌▄▄░░░░░" << endl;
-				wcout << L"░░░░░░░░▀███▀█░▄░░░" << endl;
-				wcout << L"░░░░░░░▐▌▀▄▀▄▀▐▄░░░" << endl;
-				wcout << L"░░░░░░░▐▀░░░░░░▐▌░░" << endl;
-				wcout << L"░░░░░░░█░░░░░░░░█░░" << endl;
-				wcout << L"░░░░░░▐▌░░░░░░░░░█░" << endl;
-				sleep_for(milliseconds(125));
-				system("cls");
-				sleep_for(milliseconds(50));
-				wcout << L"░░░░▐▄░░░░░░░░░░▒▒▒" << endl;
-				wcout << L"░░░▄██▄░░▄▄▄░░░░░░▒ " << endl;
-				wcout << L"░▄█▀░░░░▌▀█▀▐░░░░░░" << endl;
-				wcout << L"█▀░░░░░░▌█▄█▐░░░░░░" << endl;
-				wcout << L"▀▄▄▄▄▄░░░▀▄▀░░░░░░░" << endl;
-				wcout << L"░░░░░▀▀▀▀██▄▄▄░░░░░" << endl;
-				wcout << L"░░░░░░▀▀░█▄▄▄▀█░░░░" << endl;
-				wcout << L"░░░░░▀▀▀▌▐▄▄▄░▌░░░░" << endl;
-				wcout << L"░░░░░▀▀░█░▄▄░░░▐░▄░" << endl;
-				wcout << L"░░░░░▀░▀█▀░▄░░░▌█▀░" << endl;
-				wcout << L"░░░░░▄▄▌▐▄▄░░░░░░░░" << endl;
-				wcout << L"░░░▄░█▀███▀░░░░░░░░" << endl;
-				wcout << L"░░░▄▐▀▄▀▄▀▌▐░░░░░░░" << endl;
-				wcout << L"░░▌▐░░░░░░▀▐░░░░░░░" << endl;
-				wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
-				wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
-				sleep_for(milliseconds(125));
+				else
+				{
+					using namespace std::this_thread;
+					using namespace std::chrono;
+					
+					system("cls");
+					sleep_for(milliseconds(50));
+					wcout << L"▒▒▒░░░░░░░░░░▄▐░░░░" << endl;
+					wcout << L"▒░░░░░░▄▄▄░░▄██▄░░░ " << endl;
+					wcout << L"░░░░░░▐▀█▀▌░░░░▀█▄░" << endl;
+					wcout << L"░░░░░░▐█▄█▌░░░░░░▀█▄" << endl;
+					wcout << L"░░░░░░░▀▄▀░░░▄▄▄▄▄▀▀" << endl;
+					wcout << L"░░░░░▄▄▄██▀▀▀▀░░░░░" << endl;
+					wcout << L"░░░░█▀▄▄▄█░▀▀░░░░░░" << endl;
+					wcout << L"░░░░▌░▄▄▄▐▌▀▀▀░░░░░" << endl;
+					wcout << L"░▄░▐░░░▄▄░█░▀▀░░░░░" << endl;
+					wcout << L"░▀█▌░░░▄░▀█▀░▀░░░░░" << endl;
+					wcout << L"░░░░░░░░▄▄▐▌▄▄░░░░░" << endl;
+					wcout << L"░░░░░░░░▀███▀█░▄░░░" << endl;
+					wcout << L"░░░░░░░▐▌▀▄▀▄▀▐▄░░░" << endl;
+					wcout << L"░░░░░░░▐▀░░░░░░▐▌░░" << endl;
+					wcout << L"░░░░░░░█░░░░░░░░█░░" << endl;
+					wcout << L"░░░░░░▐▌░░░░░░░░░█░" << endl;
+					sleep_for(milliseconds(125));
+					system("cls");
+					sleep_for(milliseconds(50));
+					wcout << L"░░░░▐▄░░░░░░░░░░▒▒▒" << endl;
+					wcout << L"░░░▄██▄░░▄▄▄░░░░░░▒ " << endl;
+					wcout << L"░▄█▀░░░░▌▀█▀▐░░░░░░" << endl;
+					wcout << L"█▀░░░░░░▌█▄█▐░░░░░░" << endl;
+					wcout << L"▀▄▄▄▄▄░░░▀▄▀░░░░░░░" << endl;
+					wcout << L"░░░░░▀▀▀▀██▄▄▄░░░░░" << endl;
+					wcout << L"░░░░░░▀▀░█▄▄▄▀█░░░░" << endl;
+					wcout << L"░░░░░▀▀▀▌▐▄▄▄░▌░░░░" << endl;
+					wcout << L"░░░░░▀▀░█░▄▄░░░▐░▄░" << endl;
+					wcout << L"░░░░░▀░▀█▀░▄░░░▌█▀░" << endl;
+					wcout << L"░░░░░▄▄▌▐▄▄░░░░░░░░" << endl;
+					wcout << L"░░░▄░█▀███▀░░░░░░░░" << endl;
+					wcout << L"░░░▄▐▀▄▀▄▀▌▐░░░░░░░" << endl;
+					wcout << L"░░▌▐░░░░░░▀▐░░░░░░░" << endl;
+					wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
+					wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
+					sleep_for(milliseconds(125));
+					int i = i++;
+				}
+				cout >> "There were "
 			}
 		}
-	}
-while (option != 3);
-return 0;
+	} while (option != 3);
+	return 0;
 }
