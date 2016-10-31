@@ -8,6 +8,53 @@
 #include<conio.h>
 using namespace std;
 
+void spoops_to_the_left()
+{
+	system("cls");
+	sleep_for(milliseconds(50));
+	wcout << L"▒▒▒░░░░░░░░░░▄▐░░░░" << endl;
+	wcout << L"▒░░░░░░▄▄▄░░▄██▄░░░ " << endl;
+	wcout << L"░░░░░░▐▀█▀▌░░░░▀█▄░" << endl;
+	wcout << L"░░░░░░▐█▄█▌░░░░░░▀█▄" << endl;
+	wcout << L"░░░░░░░▀▄▀░░░▄▄▄▄▄▀▀" << endl;
+	wcout << L"░░░░░▄▄▄██▀▀▀▀░░░░░" << endl;
+	wcout << L"░░░░█▀▄▄▄█░▀▀░░░░░░" << endl;
+	wcout << L"░░░░▌░▄▄▄▐▌▀▀▀░░░░░" << endl;
+	wcout << L"░▄░▐░░░▄▄░█░▀▀░░░░░" << endl;
+	wcout << L"░▀█▌░░░▄░▀█▀░▀░░░░░" << endl;
+	wcout << L"░░░░░░░░▄▄▐▌▄▄░░░░░" << endl;
+	wcout << L"░░░░░░░░▀███▀█░▄░░░" << endl;
+	wcout << L"░░░░░░░▐▌▀▄▀▄▀▐▄░░░" << endl;
+	wcout << L"░░░░░░░▐▀░░░░░░▐▌░░" << endl;
+	wcout << L"░░░░░░░█░░░░░░░░█░░" << endl;
+	wcout << L"░░░░░░▐▌░░░░░░░░░█░" << endl;
+	sleep_for(milliseconds(125));
+	
+}
+
+void spoops_to_the_right()
+{
+	system("cls");
+	sleep_for(milliseconds(50));
+	wcout << L"░░░░▐▄░░░░░░░░░░▒▒▒" << endl;
+	wcout << L"░░░▄██▄░░▄▄▄░░░░░░▒ " << endl;
+	wcout << L"░▄█▀░░░░▌▀█▀▐░░░░░░" << endl;
+	wcout << L"█▀░░░░░░▌█▄█▐░░░░░░" << endl;
+	wcout << L"▀▄▄▄▄▄░░░▀▄▀░░░░░░░" << endl;
+	wcout << L"░░░░░▀▀▀▀██▄▄▄░░░░░" << endl;
+	wcout << L"░░░░░░▀▀░█▄▄▄▀█░░░░" << endl;
+	wcout << L"░░░░░▀▀▀▌▐▄▄▄░▌░░░░" << endl;
+	wcout << L"░░░░░▀▀░█░▄▄░░░▐░▄░" << endl;
+	wcout << L"░░░░░▀░▀█▀░▄░░░▌█▀░" << endl;
+	wcout << L"░░░░░▄▄▌▐▄▄░░░░░░░░" << endl;
+	wcout << L"░░░▄░█▀███▀░░░░░░░░" << endl;
+	wcout << L"░░░▄▐▀▄▀▄▀▌▐░░░░░░░" << endl;
+	wcout << L"░░▌▐░░░░░░▀▐░░░░░░░" << endl;
+	wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
+	wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
+	sleep_for(milliseconds(125));	
+}
+
 int main()
 {
 	_setmode(_fileno(stdout), _O_U16TEXT);
@@ -33,45 +80,8 @@ int main()
 			{
 				while (!_kbhit())
 				{
-					system("cls");
-					sleep_for(milliseconds(50));
-					wcout << L"▒▒▒░░░░░░░░░░▄▐░░░░" << endl;
-					wcout << L"▒░░░░░░▄▄▄░░▄██▄░░░ " << endl;
-					wcout << L"░░░░░░▐▀█▀▌░░░░▀█▄░" << endl;
-					wcout << L"░░░░░░▐█▄█▌░░░░░░▀█▄" << endl;
-					wcout << L"░░░░░░░▀▄▀░░░▄▄▄▄▄▀▀" << endl;
-					wcout << L"░░░░░▄▄▄██▀▀▀▀░░░░░" << endl;
-					wcout << L"░░░░█▀▄▄▄█░▀▀░░░░░░" << endl;
-					wcout << L"░░░░▌░▄▄▄▐▌▀▀▀░░░░░" << endl;
-					wcout << L"░▄░▐░░░▄▄░█░▀▀░░░░░" << endl;
-					wcout << L"░▀█▌░░░▄░▀█▀░▀░░░░░" << endl;
-					wcout << L"░░░░░░░░▄▄▐▌▄▄░░░░░" << endl;
-					wcout << L"░░░░░░░░▀███▀█░▄░░░" << endl;
-					wcout << L"░░░░░░░▐▌▀▄▀▄▀▐▄░░░" << endl;
-					wcout << L"░░░░░░░▐▀░░░░░░▐▌░░" << endl;
-					wcout << L"░░░░░░░█░░░░░░░░█░░" << endl;
-					wcout << L"░░░░░░▐▌░░░░░░░░░█░" << endl;
-					sleep_for(milliseconds(125));
-					system("cls");
-					sleep_for(milliseconds(50));
-					wcout << L"░░░░▐▄░░░░░░░░░░▒▒▒" << endl;
-					wcout << L"░░░▄██▄░░▄▄▄░░░░░░▒ " << endl;
-					wcout << L"░▄█▀░░░░▌▀█▀▐░░░░░░" << endl;
-					wcout << L"█▀░░░░░░▌█▄█▐░░░░░░" << endl;
-					wcout << L"▀▄▄▄▄▄░░░▀▄▀░░░░░░░" << endl;
-					wcout << L"░░░░░▀▀▀▀██▄▄▄░░░░░" << endl;
-					wcout << L"░░░░░░▀▀░█▄▄▄▀█░░░░" << endl;
-					wcout << L"░░░░░▀▀▀▌▐▄▄▄░▌░░░░" << endl;
-					wcout << L"░░░░░▀▀░█░▄▄░░░▐░▄░" << endl;
-					wcout << L"░░░░░▀░▀█▀░▄░░░▌█▀░" << endl;
-					wcout << L"░░░░░▄▄▌▐▄▄░░░░░░░░" << endl;
-					wcout << L"░░░▄░█▀███▀░░░░░░░░" << endl;
-					wcout << L"░░░▄▐▀▄▀▄▀▌▐░░░░░░░" << endl;
-					wcout << L"░░▌▐░░░░░░▀▐░░░░░░░" << endl;
-					wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
-					wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
-					sleep_for(milliseconds(125));
-
+					spoops_to_the_left();
+					spoops_to_the_right();
 				}
 			}
 			else
@@ -97,44 +107,9 @@ int main()
 					using namespace std::this_thread;
 					using namespace std::chrono;
 					
-					system("cls");
-					sleep_for(milliseconds(50));
-					wcout << L"▒▒▒░░░░░░░░░░▄▐░░░░" << endl;
-					wcout << L"▒░░░░░░▄▄▄░░▄██▄░░░ " << endl;
-					wcout << L"░░░░░░▐▀█▀▌░░░░▀█▄░" << endl;
-					wcout << L"░░░░░░▐█▄█▌░░░░░░▀█▄" << endl;
-					wcout << L"░░░░░░░▀▄▀░░░▄▄▄▄▄▀▀" << endl;
-					wcout << L"░░░░░▄▄▄██▀▀▀▀░░░░░" << endl;
-					wcout << L"░░░░█▀▄▄▄█░▀▀░░░░░░" << endl;
-					wcout << L"░░░░▌░▄▄▄▐▌▀▀▀░░░░░" << endl;
-					wcout << L"░▄░▐░░░▄▄░█░▀▀░░░░░" << endl;
-					wcout << L"░▀█▌░░░▄░▀█▀░▀░░░░░" << endl;
-					wcout << L"░░░░░░░░▄▄▐▌▄▄░░░░░" << endl;
-					wcout << L"░░░░░░░░▀███▀█░▄░░░" << endl;
-					wcout << L"░░░░░░░▐▌▀▄▀▄▀▐▄░░░" << endl;
-					wcout << L"░░░░░░░▐▀░░░░░░▐▌░░" << endl;
-					wcout << L"░░░░░░░█░░░░░░░░█░░" << endl;
-					wcout << L"░░░░░░▐▌░░░░░░░░░█░" << endl;
-					sleep_for(milliseconds(125));
-					system("cls");
-					sleep_for(milliseconds(50));
-					wcout << L"░░░░▐▄░░░░░░░░░░▒▒▒" << endl;
-					wcout << L"░░░▄██▄░░▄▄▄░░░░░░▒ " << endl;
-					wcout << L"░▄█▀░░░░▌▀█▀▐░░░░░░" << endl;
-					wcout << L"█▀░░░░░░▌█▄█▐░░░░░░" << endl;
-					wcout << L"▀▄▄▄▄▄░░░▀▄▀░░░░░░░" << endl;
-					wcout << L"░░░░░▀▀▀▀██▄▄▄░░░░░" << endl;
-					wcout << L"░░░░░░▀▀░█▄▄▄▀█░░░░" << endl;
-					wcout << L"░░░░░▀▀▀▌▐▄▄▄░▌░░░░" << endl;
-					wcout << L"░░░░░▀▀░█░▄▄░░░▐░▄░" << endl;
-					wcout << L"░░░░░▀░▀█▀░▄░░░▌█▀░" << endl;
-					wcout << L"░░░░░▄▄▌▐▄▄░░░░░░░░" << endl;
-					wcout << L"░░░▄░█▀███▀░░░░░░░░" << endl;
-					wcout << L"░░░▄▐▀▄▀▄▀▌▐░░░░░░░" << endl;
-					wcout << L"░░▌▐░░░░░░▀▐░░░░░░░" << endl;
-					wcout << L"░░█░░░░░░░░█░░░░░░░" << endl;
-					wcout << L"░█░░░░░░░░░▌▐░░░░░░" << endl;
-					sleep_for(milliseconds(125));
+					spoops_to_the_left();
+					spoops_to_the_right();
+					
 					int i = i++;
 				}
 				cout >> "There were "
